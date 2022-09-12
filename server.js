@@ -5,7 +5,10 @@ const server = require("http").createServer(app);
 //connecting server to socket.io to enable two way communication
 const io = require("socket.io")(server, {
   cors: {
-    origins: ["http://127.0.0.1:5500/", "https://lift-project.netlify.app/"],
+    origins: [
+      "http://127.0.0.1:5500/",
+      "https://lift-simulation-mechanism.netlify.app/",
+    ],
   },
 });
 
